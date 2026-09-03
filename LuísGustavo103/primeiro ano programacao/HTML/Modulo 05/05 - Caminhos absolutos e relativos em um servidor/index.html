@@ -7,16 +7,34 @@
 </head>
 <body>
     <!--
-    Caminhos relativos em pastas diferentes
-- Os caminhos relativos são utilizados quando o arquivo que queremos acessar está em uma pasta diferente daquela onde está o arquivo atual.
 
-- O caminho é definido a partir da localização do arquivo que está fazendo a referência.
+    Quando uma página HTML está hospedada em um servidor, os caminhos indicam onde um arquivo ou recurso está localizado dentro da estrutura do site.
 
-- Quando precisamos acessar uma pasta que está dentro da pasta atual, basta indicar o nome dessa pasta e, em seguida, o nome do arquivo.
+Caminho absoluto
 
-- Quando o arquivo está em uma pasta anterior, utilizamos .., que significa voltar uma pasta.
+    No servidor, um caminho absoluto indica a localização do recurso a partir da raiz do site.
+    Ele começa com uma barra /.
 
-- Se for necessário voltar duas pastas, utilizamos ../... Para três pastas, ../../.., e assim por diante.
+    A ideia é:
+
+        “Comece na raiz do site e siga este caminho.”
+
+    Por exemplo, se uma imagem está dentro da pasta imagens, o caminho absoluto parte da raiz e chega até essa pasta.
+
+    O caminho absoluto não depende da pasta onde está o arquivo HTML atual. Por isso, uma página localizada em qualquer nível do site pode utilizar o mesmo caminho para chegar ao recurso.
+
+    Também existe o caminho absoluto utilizando o endereço completo do site, começando com https://. Nesse caso, além da localização dentro do site, também é informado o domínio.
+
+    Caminho relativo
+O caminho relativo é calculado a partir da localização do arquivo atual.
+
+Se o arquivo HTML está em uma determinada pasta e o recurso está em uma pasta próxima, o caminho será definido de acordo com essa posição.
+
+Quando é necessário voltar para uma pasta anterior, utiliza-se ...
+
+
+    
     -->
+
 </body>
 </html>
